@@ -1,0 +1,40 @@
+{
+  "name": "snowpack-issue-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/lodash.filter": "^4.6.6",
+    "@types/lodash.orderby": "^4.6.6",
+    "@types/lodash.shuffle": "^4.2.6",
+    "@types/node": "^13.1.8",
+    "del-cli": "^3.0.0",
+    "snowpack": "^1.4.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "lodash.filter": "^4.6.0",
+    "lodash.orderby": "^4.6.0",
+    "lodash.shuffle": "^4.2.0",
+    "mobx": "^5.15.4"
+  },
+  "scripts": {
+    "build:js": " del dist/src && babel src --out-dir dist/src --ignore \"src/**/__tests__/**/*\",\"src/**/*.spec.ts\",\"src/**/*.test.ts\" --extensions \".ts,.tsx\" --source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivandotv/snowpack-issue-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivandotv/snowpack-issue-test/issues"
+  },
+  "homepage": "https://github.com/ivandotv/snowpack-issue-test#readme"
+}
